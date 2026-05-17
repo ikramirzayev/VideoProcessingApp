@@ -35,3 +35,16 @@ Yapay zeka videoyu kare kare tararken, aynı nesneyi (örneğin "Cat") videonun 
 Projenin PostgreSQL veritabanını Docker üzerinde başlatmak için terminalden şu komutu çalıştırın:
 ```bash
 docker run --name video-postgres -e POSTGRES_PASSWORD=#### -p 5433:5432 -d postgres
+```
+2. Yapılandırma ve Şifreler (Configuration)
+3. Migration ve Veritabanı Şeması
+4. Projeyi Başlatma
+
+🌐 API Endpointleri (Bağlantı Noktaları)
+```
+GET /api/video/s3-dosyalari-listele -> AWS S3 Bucket içerisindeki tüm dosyaları boyut ve tarihlerine göre listeler.
+
+GET /api/video/video-analiz-et?videoAdi=ornek.mp4 -> Belirtilen videoyu AWS üzerinde analiz eder, akıllı filtreden geçirip PostgreSQL'e kaydeder.
+
+GET /api/video/gecmis-listele -> Veritabanındaki tüm analiz geçmişini videonun tam hangi milisaniyesinde tespiti yaptığını göstererek listeler.
+```
