@@ -1,0 +1,11 @@
+# .NET'in derleme yaparken ürettiği gereksiz klasörler
+bin/
+obj/
+
+# ÖZEL ŞİFRELERİN OLDUĞU DOSYA (ASLA GİTMEYECEK!)
+appsettings.json
+appsettings.Development.json
+
+# Kullanıcıya özel lokal ayarlar
+.vs/
+.vscode/ECHO is on.

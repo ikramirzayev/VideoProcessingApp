@@ -1,0 +1,13 @@
+@VideoProcessingApp_HostAddress = http://localhost:5272
+
+#if (EnableOpenAPI)
+GET {{VideoProcessingApp_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+###
+#endif
+
+GET {{VideoProcessingApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
